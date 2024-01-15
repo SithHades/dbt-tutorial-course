@@ -8,6 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.12"
 dbt-bigquery = "1.6.1"
+setuptools = "^69.0.3"
 
 
 [build-system]
