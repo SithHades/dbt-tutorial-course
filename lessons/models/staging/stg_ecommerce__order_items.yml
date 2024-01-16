@@ -5,13 +5,11 @@ models:
     description: "Line items from orders"
     columns:
       - name: order_item_id
-        # Model tests (run AFTER model is built)
         tests:
-          - not_null
-          - unique
+          - primary_key:
+              severity: error
 
       - name: order_id
-        data_type: INTEGER
         tests:
           - not_null
           - relationships:
